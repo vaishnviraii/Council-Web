@@ -1,9 +1,14 @@
+/* General Styles */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #061341; /* Matches the dark background */
-    color: #ffffff; /* White text color */
+    background-color: #061341;
+    color: #ffffff;
 }
 
 .container {
@@ -11,13 +16,24 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    padding: 15px 0;
 }
 
+
+.cont {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+/* Header */
 header {
-    background-color: #091540; 
+    background-color: #091540;
     padding: 10px 0;
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -27,7 +43,7 @@ header {
 }
 
 #logo {
-    height: 90px; 
+    height: 90px;
     margin-right: 15px;
 }
 
@@ -44,6 +60,7 @@ header {
     font-weight: 400;
 }
 
+/* Navigation Bar */
 nav {
     display: flex;
     align-items: center;
@@ -62,16 +79,16 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: #ffffff; 
+    color: #ffffff;
     font-weight: bold;
     font-size: 16px;
 }
 
 nav a:hover {
-    color: #ABD2FA; 
+    color: #ABD2FA;
 }
 
-
+/* Hero Section */
 .hero {
     background-color: #061341;
     padding: 60px 0;
@@ -79,6 +96,12 @@ nav a:hover {
 }
 
 .hero h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.hero p {
+    font-size: 18px;
     margin-bottom: 20px;
 }
 
@@ -94,6 +117,7 @@ nav a:hover {
     background-color: #5cb6f6;
 }
 
+/* Section Styles */
 .section {
     padding: 40px 0;
 }
@@ -101,8 +125,10 @@ nav a:hover {
 .section h2 {
     text-align: center;
     margin-bottom: 20px;
+    font-size: 32px;
 }
-/*TEAM GRID Begins */
+
+/* Team Section */
 .team-section {
     text-align: center;
     padding: 50px 0;
@@ -125,7 +151,7 @@ nav a:hover {
 .team-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px; 
+    gap: 20px;
 }
 
 .team-member {
@@ -140,10 +166,10 @@ nav a:hover {
 .team-member img {
     width: 100%;
     height: auto;
-    max-width: 300px; 
+    max-width: 300px;
     margin-bottom: 15px;
-    object-fit: cover; 
-    border-radius: 0px; 
+    object-fit: cover;
+    border-radius: 0px;
 }
 
 .team-member h3 {
@@ -156,72 +182,31 @@ nav a:hover {
 .team-member p {
     font-size: 16px;
     margin-bottom: 15px;
-    color: #ABD2FA; 
+    color: #ABD2FA;
 }
 
-links {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: #333;
-    padding: 10px;
-    border-radius: 5px;
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
 
-  }
-  
-  .links a {
-    color: white;
-    text-decoration: none;
-    display: block;
-    margin: 5px 0;
-  }
-  
-  .links a:hover {
-    text-decoration: underline;
-  }
-  
-  .profile:hover .links {
-    display: block;
-  }
+.links a img {
+    width: 24px;
+    height: 24px;
+}
 
-  @media (max-width: 768px) {
+/* Responsive Design */
+@media (max-width: 768px) {
     .team-grid {
         grid-template-columns: 1fr;
     }
 }
-/*TEAM GRID ENDS */
 
 footer {
     background-color: #ffffff;
     text-align: center;
     padding: 10px 0;
+    color: #061341;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
-}
-
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        position: absolute;
-        right: 0;
-        top: 50px;
-        background-color: #ffffff;
-        width: 200px;
-        display: none;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-
-    nav li {
-        margin: 10px 0;
-        text-align: right;
-        margin-right: 20px;
-    }
-
-    .menu-toggle {
-        display: block;
-    }
-
-    nav.active ul {
-        display: flex;
-    }
 }

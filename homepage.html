@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="home.css">
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -14,10 +16,10 @@
                 <img src="logo.jpg" alt="ACM Logo" id="logo">
                 <div class="chapter-info">
                     <h1>SNDT ACM-W</h1>
-                    <h2>Student chapter</h2>
+                    <h2>Student Chapter</h2>
                 </div>
             </div>
-            <nav>
+            <nav id="nav-links">
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About Us</a></li>
@@ -33,52 +35,61 @@
 
     <main>
         <section id="home" class="hero">
-            <div class="container">
+            <div class="cont">
                 <h2>Welcome to SNDT ACM-W</h2>
                 <p>Empowering women in computing through community and collaboration.</p>
                 <a href="#about" class="cta-button">Learn More</a>
             </div>
         </section>
 
-        <div class="team-section">
-            <h1 class="section-title">THE TEAM</h1>
-            <p class="sub-title">Executive Committee</p>
-            <div class="team-grid">
-                <div class="team-member">
-                    <img src="pfp.jpg" alt="Vaishnavi Rai">
-                    <h3>Vaishnavi Rai</h3>
-                    <p>Technical Head</p>
-                    <div class="links">
-                        <a href="https://linkedin.com/in/username"  target="_blank"><img src="Linkedin.png"></a>
-                        <a href="https://github.com/username" target="_blank"><img src="Git.png"></a>
-                        <a href="https://instagram.com/username" target="_blank"><img src="Instagram.png">Instagram</a>
-                      </div>
-                </div>
-                <div class="team-member">
-                    <img src="image2.jpg" alt="XYZ XYZ">
-                    <h3>XYZ</h3>
-                    <p>Vice-Chairperson</p>
-                    <div class="links">
-                        <a href="https://linkedin.com/in/username"  target="_blank"><img src="Linkedin.png"></a>
-                        <a href="https://github.com/username" target="_blank"><img src="Git.png"></a>
-                        <a href="https://instagram.com/username" target="_blank"><img src="Instagram.png"></a>
-                      </div>
-                </div>
-                <div class="team-member">
-                    <img src="image3.jpg" alt="XYZ XYZ">
-                    <h3>XYZ</h3>
-                    <p>General Secretary</p>
-                    <div class="links">
-                        <a href="https://linkedin.com/in/username"  target="_blank"><img src="Linkedin.png"></a>
-                        <a href="https://github.com/username" target="_blank"><img src="Git.png"></a>
-                        <a href="https://instagram.com/username" target="_blank"><img src="Instagram.png"></a>
-                      </div>
+        <section id="about" class="section">
+            <div class="cont">
+                <h2>About Us</h2>
+                <p>We are dedicated to promoting women's engagement in computing.   Join us for workshops, seminars, and more!</p>
+            </div>
+        </section>
+
+        <section id="team" class="team-section">
+            <div class="cont">
+                <h1 class="section-title">THE TEAM</h1>
+                <p class="sub-title">Executive Committee</p>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img src="pfp.jpg" alt="Vaishnavi Rai">
+                        <h3>Vaishnavi Rai</h3>
+                        <p>Technical Head</p>
+                        <div class="links">
+                            <a href="https://linkedin.com/in/username" target="_blank"><img src="Linkedin.png"></a>
+                            <a href="https://github.com/username" target="_blank"><img src="Git.png"></a>
+                            <a href="https://instagram.com/username" target="_blank"><img src="Instagram.png">Instagram</a>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <img src="image2.jpg" alt="XYZ XYZ">
+                        <h3>XYZ</h3>
+                        <p>Vice-Chairperson</p>
+                        <div class="links">
+                            <a href="https://linkedin.com/in/username" target="_blank"><img src="Linkedin.png"></a>
+                            <a href="https://github.com/username" target="_blank"><img src="Git.png"></a>
+                            <a href="https://instagram.com/username" target="_blank"><img src="Instagram.png"></a>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <img src="image3.jpg" alt="XYZ XYZ">
+                        <h3>XYZ</h3>
+                        <p>General Secretary</p>
+                        <div class="links">
+                            <a href="https://linkedin.com/in/username" target="_blank"><img src="Linkedin.png"></a>
+                            <a href="https://github.com/username" target="_blank"><img src="Git.png"></a>
+                            <a href="https://instagram.com/username" target="_blank"><img src="Instagram.png"></a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        
+        </section>
+
         <section id="events" class="section">
-            <div class="container">
+            <div class="cont">
                 <h2>Our Events</h2>
                 <div class="event">
                     <h3>Event Title 1</h3>
@@ -91,27 +102,35 @@
             </div>
         </section>
 
-        <section id="about" class="section">
-            <div class="container">
-                <h2>About Us</h2>
-                <p>We are dedicated to promoting women's engagement in computing. Join us for workshops, seminars, and more!</p>
+        <section id="blogs" class="section">
+            <div class="cont">
+                <h2>Our Blogs</h2>
+                <p>Explore our latest blog posts and articles.</p>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="cont">
+                <h2>Our Projects</h2>
+                <p>Discover the projects we are working on.</p>
             </div>
         </section>
 
         <section id="contact" class="section">
-            <div class="container">
+            <div class="cont">
                 <h2>Contact Us</h2>
-                <p>Email us at <a href="sndtacm.execom@gmail.com">sndtacm.execom@gmail.com</a></p>
+                <p>Email us at <a href="mailto:sndtacm.execom@gmail.com">sndtacm.execom@gmail.com</a></p>
             </div>
         </section>
     </main>
 
     <footer>
-        <div class="container">
+        <div class="cont">
             <p>&copy; 2024 SNDT ACM-W Student Chapter</p>
         </div>
     </footer>
 
     <script src="home.js"></script>
 </body>
+
 </html>

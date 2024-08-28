@@ -1,4 +1,3 @@
-// Smooth scrolling for navigation links
 document.querySelectorAll('nav a').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -8,7 +7,7 @@ document.querySelectorAll('nav a').forEach(anchor => {
 
         if (targetElement) {
             window.scrollTo({
-                top: targetElement.offsetTop,
+                top: targetElement.offsetTop - 50, 
                 behavior: 'smooth'
             });
         }
@@ -21,4 +20,3 @@ const navLinks = document.getElementById('nav-links');
 menuToggle.addEventListener('click', () => {
     navLinks.classList.toggle('active');
 });
-
