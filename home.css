@@ -1,4 +1,4 @@
-/* General  */
+/* General Styles */
 html {
     scroll-behavior: smooth;
 }
@@ -7,18 +7,16 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #061341;
+    background-color: #060c25;
     color: #ffffff;
 }
 
 .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 15px 0;
+    align-items: center;
+    width: 100%; 
+    padding: 0 20px; 
 }
 
 
@@ -30,16 +28,18 @@ body {
 }
 /* Header */
 header {
-    background-color: #091540;
+    background-color: #060c25;
     padding: 10px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+/* Logo container flex */
 .logo {
     display: flex;
     align-items: center;
+    flex: 1; /* Makes sure logo stays on the extreme left */
 }
 
 #logo {
@@ -58,6 +58,7 @@ header {
     font-size: 16px;
     margin: 0;
     font-weight: 400;
+    align-content: center;
 }
 
 /* Navigation Bar */
@@ -85,12 +86,12 @@ nav a {
 }
 
 nav a:hover {
-    color: #ABD2FA;
+    color: #d3b3ff;
 }
 
 /* Hero Section */
 .hero {
-    background-color: #061341;
+    background-color: #060c25;
     padding: 60px 0;
     text-align: center;
 }
@@ -113,10 +114,9 @@ nav a:hover {
     border-radius: 5px;
 }
 
-.cta-button:hover {
-    background-color: #5cb6f6;
+.cta-button:hover { 
+    background-color: #d3b3ff;
 }
-
 /* Section Styles */
 .section {
     padding: 40px 0;
@@ -132,14 +132,16 @@ nav a:hover {
 .team-section {
     text-align: center;
     padding: 50px 0;
-    background-color: #061341;
+    background-color: #060c25;
 }
 
 .section-title {
-    color: #5cb6f6;
+    color: #ffffff;
     font-size: 48px;
     margin-bottom: 10px;
     font-weight: bold;
+    position: relative;
+    z-index: 1; 
 }
 
 .sub-title {
@@ -155,16 +157,18 @@ nav a:hover {
 }
 
 .team-member {
-    background-color: #091540;
+    background-color: #060c25;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(10, 30, 65, 0.463);
     text-align: center;
     color: #ffffff;
+    position: relative; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .team-member img {
-    width: 100%;
+    width: 70%;
     height: auto;
     max-width: 300px;
     margin-bottom: 15px;
@@ -185,15 +189,37 @@ nav a:hover {
     color: #ABD2FA;
 }
 
+.team-member:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
 .links {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     justify-content: center;
     gap: 10px;
+    transition: bottom 0.35s ease;
+    opacity: 0;
+    z-index: 2; 
+}
+
+.team-member:hover .links {
+    bottom: 99px;
+    opacity: 1; 
 }
 
 .links a img {
-    width: 24px;
-    height: 24px;
+    width: 54px;
+    height: 48px;
+    transition: transform 0.3s ease;
+}
+
+.links a img:hover {
+    transform: scale(1.2);
 }
 
 /* Responsive Design */
@@ -202,11 +228,47 @@ nav a:hover {
         grid-template-columns: 1fr;
     }
 }
+/* events  */
+
+.see-more {
+    background-color: transparent;
+    border: 2px solid #00d1ff;
+    border-radius: 25px;
+    padding: 10px 20px;
+    color: #00d1ff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.see-more:hover {
+    background-color: #00d1ff;
+    color: #111;
+}
+
+.slick-prev, .slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #00d1ff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.slick-prev {
+    left: 10px;
+}
+
+.slick-next {
+    right: 10px;
+}
+
 
 footer {
     background-color: #ffffff;
     text-align: center;
     padding: 10px 0;
-    color: #061341;
+    color: #060c25;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 }
