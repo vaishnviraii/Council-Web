@@ -1,3 +1,4 @@
+// Smooth scroll for navigation links
 document.querySelectorAll('nav a').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -14,9 +15,12 @@ document.querySelectorAll('nav a').forEach(anchor => {
     });
 });
 
+// Toggle menu for mobile view
 const menuToggle = document.getElementById('menu-toggle');
 const navLinks = document.getElementById('nav-links');
 
 menuToggle.addEventListener('click', () => {
     navLinks.classList.toggle('active');
 });
+
+
