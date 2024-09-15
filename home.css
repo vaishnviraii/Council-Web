@@ -22,9 +22,9 @@ body {
 
 .cont {
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
+    max-width: 1300px;
+    margin: auto;   
+    
 }
 /* Header */
 header {
@@ -153,11 +153,11 @@ nav a:hover {
   .carousel-slide {
     background-color: #000000;
     border: 2px solid #0077cc;
-    border-radius: 5px;
+    border-radius: 2px;
     margin: 8px;
     text-align: center;
-    padding: 20px;
-    width: 229px; /* Set a fixed width for the cards */
+    padding: 31px;
+    width: 230px; /* Set a fixed width for the cards */
     flex-shrink: 0; /* Prevent the cards from shrinking */
     transition: transform 0.3s ease;
     position: relative;
@@ -171,29 +171,36 @@ nav a:hover {
   }
 
   .carousel-slide h3 {
-    margin: 10px ;
+    margin: 15px ;
     font-size: 1.2em;
     color: #0077cc;
   }
 
-  .social-links {
+ /* Initially hide the social links */
+.social-links {
     display: none;
-    justify-content: center;
-    gap: 10px;
     position: absolute;
-    bottom: 10px;
-    width: 100%;
-    transform: translateY(-55px);
-  }
+    bottom: 20px;
+    width: 90%;
+    justify-content: center; /* Default position (centered) */
+    transform: translateY(-225px);
+    transition: justify-content 0.3s ease, right 0.3s ease;
+}
+
+/* Show social links on hover */
+.carousel-slide:hover .social-links {
+    display: flex;
+    justify-content: flex-end; /* Moves the icon to the right on hover */
+    padding-right: 10px; /* Adds space from the right edge */
+}
 
 
   .social-links a {
-    color: #0077cc;
     font-size: 1.5em;
     transition: color 0.3s ease;
     display: inline-block;
-    width: 54px; /* Adjust size as needed */
-    height: 54px; /* Adjust size as needed */
+    width: 54px;
+    height: 54px;
   }
 
   .social-links a:hover {
@@ -202,18 +209,16 @@ nav a:hover {
 
   .carousel-slide:hover {
     transform: translateY(-2px);
+    background-color: #0f0f0f;
   }
 
-  .carousel-slide:hover .social-links {
-    display: block;
-  }
 
   /* Arrows */
   .prev, .next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgb(0, 0, 0);
     padding: 10px;
     cursor: pointer;
     color: white;
@@ -323,6 +328,100 @@ nav a:hover {
 @media (max-width: 768px) {
     .event-card {
         flex: 1 1 100%; 
+    }
+}
+/* Contact us */
+.contact-form {
+    max-width: 600px;
+    margin: 40px auto; /* Increase margin for more space */
+    padding: 30px;
+    /* Darker background for contrast */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    color: #fff;
+}
+
+.contact-form h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #0056b3; /* Highlight main title with your primary color */
+}
+
+.contact-form p {
+    font-size: 1rem;
+    color: #bbb; /* Lighter color for less important text */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Add spacing between fields */
+}
+
+label {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #ccc; /* Lighter color for labels */
+}
+
+input, textarea {
+    padding: 15px;
+    background-color: #444; /* Darker input fields */
+    border: 2px solid transparent;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: #007BFF; /* Blue border when focused */
+    outline: none; /* Remove default outline */
+}
+
+button {
+    padding: 12px 25px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.contact-form .cont p {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    color: #999;
+}
+
+/* Add responsive design for mobile */
+@media screen and (max-width: 600px) {
+    .contact-form {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .contact-form h2 {
+        font-size: 1.8rem;
+    }
+
+    .contact-form p {
+        font-size: 0.9rem;
+    }
+
+    input, textarea {
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 0.9rem;
     }
 }
 
