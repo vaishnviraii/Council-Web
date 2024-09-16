@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ACM Student Chapter</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="home.css">
 </head>
 
@@ -17,7 +18,7 @@
         <header>
         <div class="container">
             <div class="logo">
-                <img src="logo.jpg" alt="ACM Logo" id="logo">
+                <img src="logo1.jpg" alt="ACM Logo" id="logo">
                 <div class="chapter-info">
                     <h1>SNDT ACM-W</h1>
                     <h2>Student Chapter</h2>
@@ -53,7 +54,7 @@
             </div>
         </section>
           
-        <section id="Team" class="section">
+        <section id="team" class="section">
             <div class="cont">
                 <h2>Our Team</h2>
                 
@@ -302,47 +303,85 @@
         <section id="blogs" class="section">
             <div class="cont">
                 <h2>Our Blogs</h2>
-                <p>COMING SOON...</p>
+                <p><b>COMING  SOON...</b> </p>
             </div>
         </section>
          
         <section id="projects" class="section">
             <div class="cont">
                 <h2>Our Projects</h2>
-                <p>"We are working on it, stay tuned...</p>
+                <p><b>We are working on it, stay tuned...</b></p>
             </div>
         </section>
       
 
         <section id="contact" class="section">
-            <div class="cont"><h2>Contact Us</h2></div>
-            <div class="contact-form">
-                <h4>SNDT ACM-W Student  Chapter</h4>
-                <p>Usha Mittal Institue of Technology</p>
-                <p>SNDTWU Juhu, Juhu Tara Road</p>
-                <p>Santacruz West</p>
-                <p><a href="sndtacmtech@gmail.com"></a></p>
-        
-                <form action="raivaishnavi02@gmail.com" method="post">
-                    <label for="firstName">First Name:</label>
-                    <input type="text" id="firstName" name="firstName" required>
-        
-                    <label for="lastName">Last Name:</label> 
-        
-                    <input type="text" id="lastName" name="lastName" required>
-        
-                    <label for="email">Your Email Address:</label>
-                    <input type="email" id="email" name="email" required>
-        
-                    <label for="message">Your Message:</label>
-                    <textarea id="message" name="message"  rows="5" required></textarea>
-        
-                    <button type="submit">Send Message</button>
-                </form>
-        
+            <div class="cont">
+                <h2>Contact Us</h2>
             </div>
+        
+            <div class="contact-form-container">
+                <div class="contact-info">
+                    <h3>SNDT ACM-W Student Chapter</h3>
+                    <p>Usha Mittal Institute of Technology</p>
+                    <p> Juhu-Tara Road, Sir Vitthaldas Vidyavihar,</p>
+                    <p>Santacruz(W), Mumbai, Maharashtra 400049</p>
+                    <p>Email: <a href="mailto:sndtacmtech@gmail.com">sndtacmtech@gmail.com</a></p>
+
+                     <!-- Social Media Links -->
+                    <div class="social-linkscont">
+                      <a href="https://www.linkedin.com/in/vaishnaviraii" target="_blank">
+                     <i class="fab fa-linkedin"></i>
+                      </a>
+                     <a href="https://www.instagram.com/vaishnaviraii" target="_blank">
+                     <i class="fab fa-instagram"></i>
+                     </a>
+                     <a href="https://www.github.com/your-github-profile" target="_blank">
+                     <i class="fab fa-github"></i>
+                     </a>
+                     <div class="map-container">
+                        <h4>Find Us Here:</h4>
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.4829995746836!2d72.82792117466535!3d19.0864555516452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9a22a24758b%3A0x202d318309cd0d56!2sUsha%20Mittal%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1726497639671!5m2!1sen!2sin"
+                            width="470" 
+                            height="390" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    </div>
+                </div>
+        
+                <form class="contact-form" action="#" method="post">
+                    <div class="input-group">
+                        <label for="firstName">First Name:</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+        
+                    <div class="input-group">
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+        
+                    <div class="input-group">
+                        <label for="email">Your Email Address:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+        
+                    <div class="input-group">
+                        <label for="message">Your Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+        
+                    <div class="button-container">
+                        <button type="submit">Send Message</button>
+                    </div>
+                </form>
             </div>
         </section>
+        
     </main>
 
     <footer>
@@ -356,30 +395,30 @@
 let slides = Array.from(track.children);
 let currentSlide = 0;
 
-// Calculate the total width to show 4 slides at a time, including margins
-const slideWidth = slides[0].getBoundingClientRect().width + 16; // Adjust margin value accordingly
 
-// Set the track to show only 4 slides at a time
+const slideWidth = slides[0].getBoundingClientRect().width + 16; 
+
+
 const carouselContainer = document.querySelector('.carousel-container');
-const containerWidth = slideWidth * 4; // Show 4 slides at a time
+const containerWidth = slideWidth * 4; 
 carouselContainer.style.width = containerWidth + 'px';
 
-// Function to move slides
+
 const moveSlides = (direction) => {
-    // Update the current slide index based on direction (forward or backward)
+    
     currentSlide += direction;
 
-    // If currentSlide exceeds the number of slides, reset it to 0
+    
     if (currentSlide >= slides.length - 3) {
         currentSlide = 0;
     }
 
-    // If currentSlide goes below 0, wrap around to the last set of slides
+    
     if (currentSlide < 0) {
-        currentSlide = slides.length - 4; // Move to the last set of 4 slides
+        currentSlide = slides.length - 4;
     }
 
-    // Move the track by setting the translateX value
+    
     track.style.transform = 'translateX(' + (-slideWidth * currentSlide) + 'px)';
 };
 
