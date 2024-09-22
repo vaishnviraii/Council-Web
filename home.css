@@ -1,4 +1,4 @@
-/* General Styles */
+ /* General Styles */
 html {
     scroll-behavior: smooth;
 }
@@ -271,7 +271,7 @@ nav a:hover {
   }
 
   .carousel-slide:hover {
-    transform: translateY(-2px);
+    transform: translateY(-5px);
     background-color: #0f0f0f;
   }
 
@@ -338,7 +338,7 @@ nav a:hover {
 
 
 .event-card:hover {
-    transform: scale(1.1); 
+    transform: scale(1.08); 
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
