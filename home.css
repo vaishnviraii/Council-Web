@@ -1,4 +1,4 @@
- /* General Styles */
+ /* General body css*/
 html {
     scroll-behavior: smooth;
 }
@@ -41,7 +41,7 @@ header {
     align-items: center;
 }
 
-/* Logo container flex */
+/* Logo container css */
 .logo {
     display: flex;
     align-items: center;
@@ -66,7 +66,7 @@ header {
     font-weight: 400;
 }
 
-/* Navigation Bar */
+/* Nav bar css*/
 nav {
     display: flex;
     align-items: center;
@@ -104,7 +104,7 @@ nav a:hover {
     object-fit: cover;
     z-index: -1; 
 }
-/* Hero Section */
+/* welcome to sndt acm section*/
 .hero { 
     /*background-color: #060c25;*/
     padding: 90px 0;
@@ -181,7 +181,7 @@ nav a:hover {
     border-radius: none;
   }
   
-  /* Media Queries for Mobile */
+  /* responsive */
   @media (max-width: 768px) {
     .about-container {
       flex-direction: column;
@@ -239,22 +239,22 @@ nav a:hover {
     color: #0077cc;
   }
 
- /* Initially hide the social links */
+ 
 .social-links {
     display: none;
     position: absolute;
     bottom: 20px;
     width: 90%;
-    justify-content: center; /* Default position (centered) */
+    justify-content: center; 
     transform: translateY(-225px);
     transition: justify-content 0.3s ease, right 0.3s ease;
 }
 
-/* Show social links on hover */
+/* Show likedin on hover */
 .carousel-slide:hover .social-links {
     display: flex;
-    justify-content: flex-end; /* Moves the icon to the right on hover */
-    padding-right: 10px; /* Adds space from the right edge */
+    justify-content: flex-end; 
+    padding-right: 10px; 
 }
 
 
@@ -355,7 +355,7 @@ nav a:hover {
     transition: opacity 0.3s ease;
 }
 
-/* Show info on hover */
+/*  info on hover */
 .event-card:hover .event-info {
     opacity: 1;
 }
@@ -371,7 +371,7 @@ nav a:hover {
     margin-bottom: 15px;
 }
 
-/* 'See More' button styling */
+/* 'See More' button css */
 .see-more {
     background-color: transparent;
     border: 2px solid #00d1ff;
@@ -396,40 +396,40 @@ nav a:hover {
 /* Contact us */
 .contact-form {
     max-width: 600px;
-    margin: 40px auto; /* Increase margin for more space */
+    margin: 40px auto; 
     padding: 30px;
-    /* Darker background for contrast */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+   
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     color: #fff;
 }
 
 .contact-form h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #0056b3; /* Highlight main title with your primary color */
+    color: #0056b3; 
 }
 
 .contact-form p {
     font-size: 1rem;
-    color: #bbb; /* Lighter color for less important text */
+    color: #bbb; 
 }
 
 form {
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Add spacing between fields */
+    gap: 15px; 
 }
 
 label {
     font-weight: bold;
     font-size: 1rem;
-    color: #ccc; /* Lighter color for labels */
+    color: #ccc; 
 }
 
 input, textarea {
     padding: 15px;
-    background-color: #444; /* Darker input fields */
+    background-color: #444; 
     border: 2px solid transparent;
     border-radius: 5px;
     color: #fff;
@@ -438,8 +438,8 @@ input, textarea {
 }
 
 input:focus, textarea:focus {
-    border-color: #007BFF; /* Blue border when focused */
-    outline: none; /* Remove default outline */
+    border-color: #007BFF; 
+    outline: none; 
 }
 
 button {
@@ -454,7 +454,7 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #0056b3; 
 }
 
 .contact-form .cont p {
@@ -464,7 +464,7 @@ button:hover {
     color: #999;
 }
 
-/* Add responsive design for mobile */
+/*  responsive  */
 @media screen and (max-width: 600px) {
     .contact-form {
         padding: 20px;
@@ -489,7 +489,7 @@ button:hover {
 }
 
 
-/* Contact Form Styling */
+/* Contact Form  */
 .contact-form-container {
     display: flex;
     justify-content: space-between;
@@ -589,7 +589,7 @@ button:hover {
 }
 
 
-/* Responsive Design */
+/* Responsive */
 @media (max-width: 768px) {
     .contact-form-container {
         flex-direction: column;
