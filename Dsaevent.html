@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ACM Student Chapter</title>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="dsaevent.css">
+    </head>
+
+    <body>
+        <video autoplay muted loop id="bg-video">
+            <source src="councilvid.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <header>
+           <div class="container">
+            <div class="logo">
+                <img src="logo1.jpg" alt="ACM Logo" id="logo">
+                <div class="chapter-info">
+                    <h1>SNDT ACM-W</h1>
+                    <h2>Student Chapter</h2>
+                </div>
+                </div>
+                   <nav id="nav-links">
+                       <ul>
+                            <li><a href="index.html">Home</a></li>
+                           <li><a href="index.html">About Us</a></li>
+                            <li><a href="index.html">Team</a></li>
+                            <li><a href="index.html">Events</a></li>
+                            <li><a href="index.html">Blogs</a></li>
+                           <li><a href="index.html">Projects</a></li>
+                           <li><a href="index.html">Contact Us</a></li>
+                       </ul>
+                    </nav>
+             </div>
+        </header>
+
+    
+        <main>
+
+            <div class="timeline-container">
+                <h2>Our Events</h2>
+                <div class="timeline">
+                    <div class="event" data-modal="event1">
+                        <div class="dot"></div>
+                        <div class="event-info">
+                            <p>Hackathon 2023</p>
+                            <p>January 10, 2023</p>
+                        </div>
+                    </div>
+                    <div class="event" data-modal="event2">
+                        <div class="dot"></div>
+                        <div class="event-info">
+                            <p>Seminar on AI</p>
+                            <p>March 5, 2023</p>
+                        </div>
+                    </div>
+                    <div class="event" data-modal="event3">
+                        <div class="dot"></div>
+                        <div class="event-info">
+                            <p>Women in Tech Meetup</p>
+                            <p>July 20, 2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Event Modal Structure -->
+            <div id="event1" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3>Hackathon 2023</h3>
+                    <img src="hackathon.jpg" alt="Hackathon 2023">
+                    <p>This was an exciting hackathon where students developed innovative projects in 24 hours.</p>
+                </div>
+            </div>
+        
+            <div id="event2" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3>Seminar on AI</h3>
+                    <img src="ai_seminar.jpg" alt="Seminar on AI">
+                    <p>An insightful seminar on Artificial Intelligence trends and technologies.</p>
+                </div>
+            </div>
+        
+            <div id="event3" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3>Women in Tech Meetup</h3>
+                    <img src="women_tech_meetup.jpg" alt="Women in Tech Meetup">
+                    <p>A networking event to empower women in technology through knowledge-sharing and mentorship.</p>
+                </div>
+            </div>
+        
+            <script src="script.js"></script>
+        </main>
+        
+        <script src="events.js"></script>
+    </body>
+
+
+</html>
