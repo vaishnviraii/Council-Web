@@ -1,4 +1,4 @@
- /* General body css*/
+ /* General Styles */
 html {
     scroll-behavior: smooth;
 }
@@ -41,7 +41,7 @@ header {
     align-items: center;
 }
 
-/* Logo container css */
+/* Logo container flex */
 .logo {
     display: flex;
     align-items: center;
@@ -66,7 +66,7 @@ header {
     font-weight: 400;
 }
 
-/* Nav bar css*/
+/* Navigation Bar */
 nav {
     display: flex;
     align-items: center;
@@ -104,7 +104,7 @@ nav a:hover {
     object-fit: cover;
     z-index: -1; 
 }
-/* welcome to sndt acm section*/
+/* Hero Section */
 .hero { 
     /*background-color: #060c25;*/
     padding: 90px 0;
@@ -181,7 +181,7 @@ nav a:hover {
     border-radius: none;
   }
   
-  /* responsive */
+  /* Media Queries for Mobile */
   @media (max-width: 768px) {
     .about-container {
       flex-direction: column;
@@ -210,7 +210,7 @@ nav a:hover {
 
   .carousel-track {
     display: flex;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.5s ease-in-out;
   }
 
   .carousel-slide {
@@ -250,7 +250,7 @@ nav a:hover {
     transition: justify-content 0.3s ease, right 0.3s ease;
 }
 
-/* Show likedin on hover */
+/* Show social links on hover */
 .carousel-slide:hover .social-links {
     display: flex;
     justify-content: flex-end; 
@@ -338,7 +338,7 @@ nav a:hover {
 
 
 .event-card:hover {
-    transform: scale(1.08); 
+    transform: scale(1.04); 
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
@@ -355,7 +355,7 @@ nav a:hover {
     transition: opacity 0.3s ease;
 }
 
-/*  info on hover */
+/* Show info on hover */
 .event-card:hover .event-info {
     opacity: 1;
 }
@@ -371,7 +371,7 @@ nav a:hover {
     margin-bottom: 15px;
 }
 
-/* 'See More' button css */
+/* 'See More' button styling */
 .see-more {
     background-color: transparent;
     border: 2px solid #00d1ff;
@@ -398,7 +398,6 @@ nav a:hover {
     max-width: 600px;
     margin: 40px auto; 
     padding: 30px;
-   
     border-radius: 10px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     color: #fff;
@@ -418,7 +417,7 @@ nav a:hover {
 form {
     display: flex;
     flex-direction: column;
-    gap: 15px; 
+    gap: 15px;
 }
 
 label {
@@ -464,7 +463,7 @@ button:hover {
     color: #999;
 }
 
-/*  responsive  */
+/* Add responsive design for mobile */
 @media screen and (max-width: 600px) {
     .contact-form {
         padding: 20px;
@@ -489,7 +488,7 @@ button:hover {
 }
 
 
-/* Contact Form  */
+/* Contact Form Styling */
 .contact-form-container {
     display: flex;
     justify-content: space-between;
@@ -589,7 +588,7 @@ button:hover {
 }
 
 
-/* Responsive */
+/* Responsive Design */
 @media (max-width: 768px) {
     .contact-form-container {
         flex-direction: column;
